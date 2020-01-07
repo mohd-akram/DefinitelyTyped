@@ -73,6 +73,8 @@ async function testPromisify() {
 
     _boolean = cp.send(1);
     _boolean = cp.send('one');
+    _boolean = cp.send(true);
+    _boolean = cp.send(null);
     _boolean = cp.send({
         type: 'test'
     });

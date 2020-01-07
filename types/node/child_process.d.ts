@@ -3,7 +3,7 @@ declare module "child_process" {
     import * as net from "net";
     import { Writable, Readable, Stream, Pipe } from "stream";
 
-    type Serializable = string | object | number | boolean;
+    type Serializable = string | object | number | boolean | null;
     type SendHandle = net.Socket | net.Server;
 
     interface ChildProcess extends events.EventEmitter {
